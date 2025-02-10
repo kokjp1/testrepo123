@@ -1,22 +1,69 @@
 body,html {
+    width:100%;
     height:100%;
     display: flex;
     justify-content: center;
     align-items:center;
+    background-image: url(../images/background.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    font-family:Arial, Helvetica, sans-serif
 }
+
+#registreerformulier {
+/* From https://css.glass */
+    background: rgba(255, 255, 255, .75);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.7px);
+    -webkit-backdrop-filter: blur(6.7px);
+    border: .15em solid rgba(255, 255, 255, 0.8);    
+    width:40%;
+}
+
 form {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     gap:1em; 
-    padding:2em;   
+    padding:2em 0 2em 0;   
 }
 
-form input {
-    border-radius: .45em;
-    padding:0.5em;
-    border:0.15em solid grey
+fieldset#gegevens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1em;
+    border:0;
+    width:100%;
 }
+
+form fieldset#gegevens input {
+    border-radius: .45em;
+    padding:.75em;
+    background-color:transparent;
+    border:0.125em solid rgb(164, 164, 164);
+    width:80%;
+}
+
+form fieldset#gegevens label {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width:85%;
+}
+
+form fieldset#gegevens input:focus {
+    outline: none;
+    border: 0.125em solid rgb(142, 55, 255);
+    box-shadow: 0em 0em .5em .05em rgb(142, 55, 255, .5);
+}
+
+form fieldset#gegevens input::placeholder {
+    color: rgb(160, 157, 171);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+    font-size:1.05em;
+  }
 
 form legend {
     font-size: 1.5em;
@@ -24,34 +71,28 @@ form legend {
     font-family: arial;
 }
 
-#registreerformulier {
-    background-color: lightgrey;
-    width:fit-content;
-    border-radius:0.5em;
-    border: 0.15em solid grey;
-    box-shadow: 0.15em 0.15em 1.25em grey;
-}
 
-fieldset {
+fieldset#persoonlijkedingen {
     display: flex;
     justify-content: flex-start;
     border:0;
     padding:0;
     gap:1em;
     font-family: Arial, Helvetica, sans-serif;
+    font-size:1.25em;
 }
 
 input[type="radio"] {
     appearance: none; 
-    width: 1em;
-    height: 1em;
-    border: .2em solid darkgreen;
+    width: 1.25em;
+    height: 1.25em;
+    border: .2em solid rgb(149, 0, 186);
     border-radius: 50%;
     cursor: pointer;
   }
   
   input[type="radio"]:checked {
-    background-color: green;
+    background-color: rgb(142, 55, 255);
   }
 
   input[type="radio"]:hover {
@@ -60,20 +101,20 @@ input[type="radio"] {
 
   @keyframes shadowhoveropacity {
     0% {
-        box-shadow: 0em 0em .5em .15em rgba(0, 255, 0, 0);
+        box-shadow: 0em 0em .5em .15em rgb(142, 55, 255, 0);
     }
 
     100% {
-        box-shadow: 0em 0em .5em .15em rgb(0, 69, 0, 1);
+        box-shadow: 0em 0em .5em .15em rgb(142, 55, 255, 1);
     }
   }
-  
-
 
 #registreerknop {
     background-color: grey;
     color:white;
     font-family: arial;
-    padding:1em;
-    border-radius:em;
+    padding:.75em;
+    border-radius:.5em;
+    width:85%;
+    font-size:1em;
 }
