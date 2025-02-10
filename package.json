@@ -1,0 +1,22 @@
+{
+  "name": "npmoefenening",
+  "version": "1.0.0",
+  "description": "testoefeneningenhallo",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kokjp1/testrepo123.git"
+  },
+  "keywords": [
+    "oefeningen"
+  ],
+  "author": "James",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kokjp1/testrepo123/issues"
+  },
+  "homepage": "https://github.com/kokjp1/testrepo123#readme"
+}

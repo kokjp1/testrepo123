@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css files/Test.css">
 </head>
 <body>
-    <h1> HELLOOOOOOO WORLD</h1>
+    <div id="registreerformulier">
+    <form>    
+        <legend>Registreer je nu</legend>
+        <input type="text" name="voornaam" placeholder="Voornaam" required>
+        <input type="text" name="achternaam" placeholder="Achternaam" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Wachtwoord" required>
+        <fieldset>
+        <label>
+            <input type="radio" name="Hond" value="Hond"> Hond
+        </label>
+        <label>
+            <input type="radio" name="Hond" value="Kat"> Kat
+        </label> 
+        </fieldset>   
+        <h2 id="registreerknop">Registreren</h2>
+    </form>
+    </div>  
 </body>
 </html>
