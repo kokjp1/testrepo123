@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/kokjp1/testrepo123/issues"
   },
-  "homepage": "https://github.com/kokjp1/testrepo123#readme"
+  "homepage": "https://github.com/kokjp1/testrepo123#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
 }
