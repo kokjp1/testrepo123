@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,29 +8,35 @@
 </head>
 <body>
     <div id="registreerformulier">
-    <form>    
-        <legend>Registreer je nu</legend>
-        <input type="text" name="voornaam" placeholder="Voornaam" required>
-        <input type="text" name="achternaam" placeholder="Achternaam" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="password" name="password" placeholder="Wachtwoord" required>
-        <fieldset>
-        <label>
-            <input type="radio" name="Hond" value="Hond"> Hond
-        </label>
-        <label>
-            <input type="radio" name="Hond" value="Kat"> Kat
-        </label> 
-        </fieldset>   
-        <h2 id="registreerknop">Registreren</h2>
-    </form>
+        <form>    
+            <legend>Registreer je nu</legend>
+            <fieldset id="gegevens">
+
+                <label for="voornaam">Je voornaam</label>
+                <input type="text" id="voornaam" name="voornaam" placeholder="Voornaam" required>
+
+                <label for="achternaam">Je achternaam</label>
+                <input type="text" id="achternaam" name="achternaam" placeholder="Achternaam" required>
+
+                <label for="email">Emailadres</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+
+                <label for="password">Wachtwoord</label>
+                <input type="password" id="password" name="password" placeholder="Wachtwoord" required>
+            </fieldset>
+
+            <fieldset id="persoonlijkedingen">
+                <label for="hond">
+                    <input type="radio" id="hond" name="dier" value="Hond"> Hond
+                </label>
+
+                <label for="kat">
+                    <input type="radio" id="kat" name="dier" value="Kat"> Kat
+                </label> 
+            </fieldset>   
+            <button id="registreerknop">Registreren</button>
+            <p>Heb je al een account? <a href="fakelink.html">Log hier in</a></p>
+        </form>
     </div>  
-    <h3>skibidi ohio ruzz</h3>
-    <p> rizzy </p>
-    <h2> skirizi</h2>
-    <div>
-        <p> ohiotoilet</p>
-        <h9> niet veergeten te</h9>
-    </div>
 </body>
 </html>
